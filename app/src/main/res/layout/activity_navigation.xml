@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.NavigationActivity">
+
+
+    <Button
+        android:id="@+id/southBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="148dp"
+        android:text="South"
+        app:layout_constraintBottom_toTopOf="@+id/statusBarContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/westBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginBottom="261dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        android:text="West"
+        app:layout_constraintBottom_toTopOf="@+id/statusBarContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/northBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="16dp"
+        android:text="North"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eastBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="188dp"
+        android:text="East"
+        app:layout_constraintBottom_toTopOf="@+id/statusBarContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/optionBtn"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="3dp"
+        android:text="Options"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/eastBtn"
+        app:layout_constraintStart_toEndOf="@+id/westBtn"
+        app:layout_constraintTop_toBottomOf="@+id/areaInfoContainer" />
+
+    <fragment
+        android:id="@+id/statusBarContainer"
+        android:name="vg.my.citruscode.assignmentmadness.View.StatusBarFragment"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <fragment
+        android:id="@+id/areaInfoContainer"
+        android:name="vg.my.citruscode.assignmentmadness.View.AreaInfoFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northBtn" />
+
+    <Button
+        android:id="@+id/overviewBtn"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="2dp"
+        android:text="Overview"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/eastBtn"
+        app:layout_constraintStart_toEndOf="@+id/westBtn"
+        app:layout_constraintTop_toBottomOf="@+id/optionBtn" />
+
+</android.support.constraint.ConstraintLayout>
